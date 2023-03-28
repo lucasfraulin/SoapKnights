@@ -36,21 +36,6 @@ public class GameEnding : MonoBehaviour
         {
             GameOver();
         }
-
-        Lever.isRoomClear = CheckEnemiesAndDirtLeft();
-
-        if (Lever.isActivated) 
-        {
-            EndLevel();
-        }
-    }
-
-    public bool CheckEnemiesAndDirtLeft()
-    {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        GameObject[] dirt = GameObject.FindGameObjectsWithTag("Dirt");
-
-        return (enemies.Length <= 0 && dirt.Length <= 0);
     }
 
     void GameOver()
@@ -65,20 +50,33 @@ public class GameEnding : MonoBehaviour
         GameCompleted = true;
     }
 
-    void EndLevel()
-    {        
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        
-        bgAudioSource.clip = winMusic;
-        bgAudioSource.Play();
+    public void EndLevel()
+    {       
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
 
-        LevelCompletedMenu.SetActive(true);
-
-        GameFinished = true;
-        GameCompleted = true;
         Lever.isActivated = false;
-        Lever.isRoomClear = false;
+        DoorController.isOpen = false;
+        LevelManager.isRoomClear = false;
+
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            
+            bgAudioSource.clip = winMusic;
+            bgAudioSource.Play();
+
+            LevelCompletedMenu.SetActive(true);
+
+            GameFinished = true;
+            GameCompleted = true;
+        }
     }
 
     public void RestartGame()

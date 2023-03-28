@@ -2,28 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lever : MonoBehaviour
+public class DoorController : MonoBehaviour
 {
-    public Sprite fullLeverActive;
-    public Sprite fullLeverInactive;
-    public GameObject Waterfall;
-    public Color activeColor;
-    public GameObject interactText;
-    public GameObject roomNotClearText;
+    public Sprite DoorClosed;
+    public Sprite DoorOpen;
+    [SerializeField] private GameObject interactText;
+    [SerializeField] private GameObject roomNotClearText;
+    public static bool isOpen;
 
     public bool isRoomClear = false;
-    public static bool isActivated = false;
-
     private bool withinRangeAndReady = false;
-
     private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = fullLeverInactive;
+        spriteRenderer.sprite = DoorClosed;
         interactText.SetActive(false);
         roomNotClearText.SetActive(false);
+        isOpen = false;
     }
     
     void Update() 
@@ -38,7 +35,7 @@ public class Lever : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && withinRangeAndReady)
         {
-            ActivateLever();
+            ExitLevel();
         }
     }
 
@@ -47,12 +44,12 @@ public class Lever : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("player entered");
-            if (isRoomClear && !isActivated)
+            if (isRoomClear && !isOpen)
             {
                 interactText.SetActive(true);
                 withinRangeAndReady = true;
             }
-            else if (!isRoomClear && !isActivated) 
+            else if (!isRoomClear && !isOpen) 
             {
                 roomNotClearText.SetActive(true);
             }
@@ -70,14 +67,13 @@ public class Lever : MonoBehaviour
         }
     }
 
-    void ActivateLever()
+    void ExitLevel()
     {
-        isActivated = !isActivated;
+        isOpen = !isOpen;
 
-        if (isActivated)
+        if (isOpen)
         {
-            spriteRenderer.sprite = fullLeverActive;
-            Waterfall.GetComponent<Waterfall>().particleColor = activeColor;
+            spriteRenderer.sprite = DoorOpen;
             Destroy(interactText);
         }
     }
