@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 7880353816461900877}
   - component: {fileID: 140729108945022110}
   m_Layer: 10
-  m_Name: Slime
+  m_Name: Moving Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   waterDamage: 10
   knockbackForce: 5
   flashDuration: 0.1
-  moving: 0
+  moving: 1
   isRanged: 0
   bullet: {fileID: 7582153140971469027, guid: 43b68e2123567f34a8539f9eadaaf21a, type: 3}
   fireRate: 3000

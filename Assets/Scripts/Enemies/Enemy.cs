@@ -10,9 +10,21 @@ public class Enemy : MonoBehaviour
     public int waterDamage = 10;
     public float knockbackForce = 5f;
     public float flashDuration = 0.1f;
+    public bool moving;
+    public bool isRanged;
+    public GameObject bullet; //bullet prefab
+    public float fireRate = 3000f; //Fire every 3 seconds
+    public float shootingPower = 3.0f; //projectile force
+    public int enemyNum;
     public AudioClip takeDamageClip;
     public AudioClip dieClip;
 
+    private float[] maxDistance = new float[3] {0f,-4.90f, 3.85f};
+    private float[] minDistance = new float[3] {0f,-8.50f, 0.75f};
+    private float velocity = 0.01f;
+    private int direction = 1;
+    private float shootingTime = 0.0f; //to ensure enemy shoots every 3 seconds
+    private GameObject playerObj;
     private SpriteRenderer spriteRenderer;
     private Color defaultColor;
     private Animator animator;
@@ -25,8 +37,60 @@ public class Enemy : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         defaultColor = spriteRenderer.color;
         audioSource = GetComponent<AudioSource>();
+        playerObj = GameObject.Find("Player");
     }
-    
+
+    private void Update()
+    {
+        // ranged enemy will constantly fire
+        if (isRanged == true)
+        {
+            Fire();
+        }
+        
+    }
+    private void FixedUpdate()
+    {
+        // for moving
+        if (moving == true)
+        {
+            var currentPosition = transform.position;
+            
+            switch (direction)
+            {
+                case -1:
+                    // Moving Left
+                    if (currentPosition.x > minDistance[enemyNum])
+                    {
+                        currentPosition.x -= velocity;
+                        transform.position = currentPosition;                  
+                    }
+                    else
+                    {
+                        // switch direction when reaching boundary
+                        currentPosition.x = minDistance[enemyNum];
+                        transform.position = currentPosition; 
+                        direction = 1;
+                    }
+                    break;
+                case 1:
+                    // Moving Right
+                    if (currentPosition.x < maxDistance[enemyNum])
+                    {
+                        currentPosition.x += velocity;
+                        transform.position = currentPosition;
+                    }
+                    else{
+                        // switch direction when reaching boundary
+                        currentPosition.x = maxDistance[enemyNum];
+                        transform.position = currentPosition;
+                        direction = -1;
+                    }
+                    break;
+            }
+        }           
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -65,6 +129,20 @@ public class Enemy : MonoBehaviour
         else
         {
             StartCoroutine(FlashRed());
+        }
+    }
+
+    private void Fire()
+    {
+        if (Time.time > shootingTime)
+        {
+            shootingTime = Time.time + fireRate / 1000; //set shooting time to current time of shooting
+            Vector2 myPos = new Vector2(transform.position.x, transform.position.y); //our curr position is where our muzzle points
+            GameObject projectile = Instantiate(bullet, myPos, Quaternion.identity); //create our bullet
+            Vector2 playerPos = new Vector2(playerObj.transform.position.x, playerObj.transform.position.y);
+            Vector2 direction = myPos - playerPos; //get the direction to the target
+            projectile.GetComponent<Rigidbody2D>().velocity = direction * shootingPower * -1; //shoot the bullet
+            Object.Destroy(projectile, 2.0f);
         }
     }
 
