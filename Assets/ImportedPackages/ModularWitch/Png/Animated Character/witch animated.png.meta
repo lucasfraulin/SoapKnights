@@ -1,0 +1,1544 @@
+fileFormatVersion: 2
+guid: b8d1e70201112ec4e934bf752566269b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6480895061425068251
+    second: witch animated_0
+  - first:
+      213: 6757595031602663637
+    second: witch animated_1
+  - first:
+      213: 1947480304400041128
+    second: witch animated_2
+  - first:
+      213: 5394907693524111216
+    second: witch animated_3
+  - first:
+      213: -948882856726129577
+    second: witch animated_4
+  - first:
+      213: 7506749635085765171
+    second: witch animated_5
+  - first:
+      213: 3089610449719441285
+    second: witch animated_6
+  - first:
+      213: -230358402887402972
+    second: witch animated_7
+  - first:
+      213: -5389324427568029789
+    second: witch animated_8
+  - first:
+      213: 545742361767120944
+    second: witch animated_9
+  - first:
+      213: -2945792530333008118
+    second: witch animated_10
+  - first:
+      213: 8634533922817023102
+    second: witch animated_11
+  - first:
+      213: -2423696789653606046
+    second: witch animated_12
+  - first:
+      213: -2978849505139759036
+    second: witch animated_13
+  - first:
+      213: -9072141425070247994
+    second: witch animated_14
+  - first:
+      213: 7162937575395541904
+    second: witch animated_15
+  - first:
+      213: -8126448714664576994
+    second: witch animated_16
+  - first:
+      213: -4803710722830226783
+    second: witch animated_17
+  - first:
+      213: 2774360682059576543
+    second: witch animated_18
+  - first:
+      213: 5499568312269162746
+    second: witch animated_19
+  - first:
+      213: -1583416634028693644
+    second: witch animated_20
+  - first:
+      213: 5874021764246299438
+    second: witch animated_21
+  - first:
+      213: -9076263689889975989
+    second: witch animated_22
+  - first:
+      213: 6615650599952180443
+    second: witch animated_23
+  - first:
+      213: 4631017316060687430
+    second: witch animated_24
+  - first:
+      213: -7232404201253642114
+    second: witch animated_25
+  - first:
+      213: -5134957538032826628
+    second: witch animated_26
+  - first:
+      213: -8454917045851752501
+    second: witch animated_27
+  - first:
+      213: -24576481268568272
+    second: witch animated_28
+  - first:
+      213: -3867977814476791191
+    second: witch animated_29
+  - first:
+      213: -2540032467446281430
+    second: witch animated_30
+  - first:
+      213: 4834312128126757598
+    second: witch animated_31
+  - first:
+      213: 1428373610898441512
+    second: witch animated_32
+  - first:
+      213: 310077097692748844
+    second: witch animated_33
+  - first:
+      213: -1929767079882389448
+    second: witch animated_34
+  - first:
+      213: 1632421474818024450
+    second: witch animated_35
+  - first:
+      213: 3889810125964057928
+    second: witch animated_36
+  - first:
+      213: -4959662996610611974
+    second: witch animated_37
+  - first:
+      213: -1253869770252318292
+    second: witch animated_38
+  - first:
+      213: 6966275160220982105
+    second: witch animated_39
+  - first:
+      213: -49287649313461112
+    second: witch animated_40
+  - first:
+      213: 4238537703073940973
+    second: witch animated_41
+  - first:
+      213: 1769716238228872215
+    second: witch animated_42
+  - first:
+      213: -6898831903584861041
+    second: witch animated_43
+  - first:
+      213: 874034209743079899
+    second: witch animated_44
+  - first:
+      213: 3734185111046600369
+    second: witch animated_45
+  - first:
+      213: 4033266860266769186
+    second: witch animated_46
+  - first:
+      213: 9054528163881672472
+    second: witch animated_47
+  - first:
+      213: -5723017463670174641
+    second: witch animated_48
+  - first:
+      213: 1477597472815562236
+    second: witch animated_49
+  - first:
+      213: -6476234665976774849
+    second: witch animated_50
+  - first:
+      213: -6476181642312956727
+    second: witch animated_51
+  - first:
+      213: 4327020266920819141
+    second: witch animated_52
+  - first:
+      213: -876230725665573595
+    second: witch animated_53
+  - first:
+      213: -8423963740529037470
+    second: witch animated_54
+  - first:
+      213: -245887884911103179
+    second: witch animated_55
+  - first:
+      213: 3394446703023970509
+    second: witch animated_56
+  - first:
+      213: 4430937299637025367
+    second: witch animated_57
+  - first:
+      213: 3269048606668355647
+    second: witch animated_58
+  - first:
+      213: 1186596474377982742
+    second: witch animated_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: witch animated_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527ec25674c3f06a0800000000000000
+      internalID: -6480895061425068251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_1
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d01f92c0ecc7cd50800000000000000
+      internalID: 6757595031602663637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_2
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a485d6c407d60b10800000000000000
+      internalID: 1947480304400041128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_3
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fc68cb6ff8eda40800000000000000
+      internalID: 5394907693524111216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_4
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7549167b114e4d2f0800000000000000
+      internalID: -948882856726129577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_5
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a841945055d2860800000000000000
+      internalID: 7506749635085765171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_6
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587bcd5a55080ea20800000000000000
+      internalID: 3089610449719441285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_7
+      rect:
+        serializedVersion: 2
+        x: 2695
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42abed8c04a9dccf0800000000000000
+      internalID: -230358402887402972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_8
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afd87bacf54535b0800000000000000
+      internalID: -5389324427568029789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_9
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 2311.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030130c59cdd29700800000000000000
+      internalID: 545742361767120944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f70871d417e17d0800000000000000
+      internalID: -2945792530333008118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_11
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c9196ead604d770800000000000000
+      internalID: 8634533922817023102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_12
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26131717c9c4d5ed0800000000000000
+      internalID: -2423696789653606046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_13
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448ebce582009a6d0800000000000000
+      internalID: -2978849505139759036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_14
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfe49ea077491280800000000000000
+      internalID: -9072141425070247994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_15
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093cfb126cdd76360800000000000000
+      internalID: 7162937575395541904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_16
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18fcf423fd093f80800000000000000
+      internalID: -8126448714664576994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_17
+      rect:
+        serializedVersion: 2
+        x: 2695
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa28f97c8ac55db0800000000000000
+      internalID: -4803710722830226783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_18
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4b8f45752808620800000000000000
+      internalID: 2774360682059576543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_19
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 1926.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af84cc6fd34625c40800000000000000
+      internalID: 5499568312269162746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1541.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477664de5f2960ae0800000000000000
+      internalID: -1583416634028693644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_21
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1541.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2360d43ca7b48150800000000000000
+      internalID: 5874021764246299438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_22
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1541.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41f45c1342aa0280800000000000000
+      internalID: -9076263689889975989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_23
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1541.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4ef306b238fcb50800000000000000
+      internalID: 6615650599952180443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_24
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1541.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cea7876bda44040800000000000000
+      internalID: 4631017316060687430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_25
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1541.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70eb38a2b651ab90800000000000000
+      internalID: -7232404201253642114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_26
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1541.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6c6d84357fcb8b0800000000000000
+      internalID: -5134957538032826628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_27
+      rect:
+        serializedVersion: 2
+        x: 2695
+        y: 1541.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc77c9c2eb91aaa80800000000000000
+      internalID: -8454917045851752501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_28
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 1541.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f682c02dfa8aff0800000000000000
+      internalID: -24576481268568272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1156.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962e401dbae225ac0800000000000000
+      internalID: -3867977814476791191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_30
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1156.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bc7e3bdedffbcd0800000000000000
+      internalID: -2540032467446281430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_31
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1156.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edaab5a644de61340800000000000000
+      internalID: 4834312128126757598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_32
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1156.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825c4243b3a92d310800000000000000
+      internalID: 1428373610898441512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_33
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1156.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2cd5fc3a7d9d4400800000000000000
+      internalID: 310077097692748844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_34
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1156.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8380e50b0171835e0800000000000000
+      internalID: -1929767079882389448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_35
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1156.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2046f32bea687a610800000000000000
+      internalID: 1632421474818024450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_36
+      rect:
+        serializedVersion: 2
+        x: 2695
+        y: 1156.7144
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d1ec153b16bf530800000000000000
+      internalID: 3889810125964057928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 771.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4006138ccbb2bb0800000000000000
+      internalID: -4959662996610611974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_38
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 771.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca98285561c599ee0800000000000000
+      internalID: -1253869770252318292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_39
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 771.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b599c695e2da060800000000000000
+      internalID: 6966275160220982105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_40
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 771.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c6bd2e425e05ff0800000000000000
+      internalID: -49287649313461112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_41
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 771.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de582de859f42da30800000000000000
+      internalID: 4238537703073940973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_42
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 771.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c5fd4da8b4f8810800000000000000
+      internalID: 1769716238228872215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_43
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 771.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8441bd6fec6240a0800000000000000
+      internalID: -6898831903584861041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_44
+      rect:
+        serializedVersion: 2
+        x: 2695
+        y: 771.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd98641ab71312c00800000000000000
+      internalID: 874034209743079899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b63c7de29d72d330800000000000000
+      internalID: 3734185111046600369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_46
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 386.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b4e8a17da09f730800000000000000
+      internalID: 4033266860266769186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_47
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 386.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fdfe0646528ad70800000000000000
+      internalID: 9054528163881672472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_48
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 386.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c059a40f1c390b0800000000000000
+      internalID: -5723017463670174641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_49
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 386.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdbf28a21b718410800000000000000
+      internalID: 1477597472815562236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_50
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 386.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f326442eacf16a0800000000000000
+      internalID: -6476234665976774849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_51
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 386.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4c70dcb1bff16a0800000000000000
+      internalID: -6476181642312956727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_52
+      rect:
+        serializedVersion: 2
+        x: 2695
+        y: 386.7143
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c93bb9d10aac0c30800000000000000
+      internalID: 4327020266920819141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.7142944
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525bb672cc007d3f0800000000000000
+      internalID: -876230725665573595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_54
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1.7142944
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26feefc2c91181b80800000000000000
+      internalID: -8423963740529037470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_55
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1.7142944
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5333d4d754e669cf0800000000000000
+      internalID: -245887884911103179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_56
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1.7142944
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc85db6ba4f7b1f20800000000000000
+      internalID: 3394446703023970509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_57
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1.7142944
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ab4e67ff9dd7d30800000000000000
+      internalID: 4430937299637025367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_58
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1.7142944
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38f3f9336efd5d20800000000000000
+      internalID: 3269048606668355647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch animated_59
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1.7142944
+        width: 385.2
+        height: 385.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613d703e433a77010800000000000000
+      internalID: 1186596474377982742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
