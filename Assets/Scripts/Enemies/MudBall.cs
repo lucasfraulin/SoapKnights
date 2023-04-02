@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bulletDamage : MonoBehaviour
+public class MudBall : MonoBehaviour
 {
-    public int damage = 10;
+    public int damage = 30;
     public float knockbackForce = 5f;
 
     private SpriteRenderer spriteRenderer;
@@ -23,7 +23,8 @@ public class bulletDamage : MonoBehaviour
             direction = direction.normalized;
             playerRB.velocity = Vector2.zero;
             playerRB.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
-            StartCoroutine(other.GetComponent<PlayerMovement>().DisableMovement(0.3f));
+            StartCoroutine(DisableMovement(other.gameObject));
+            Destroy(gameObject);
         }
         else if (other.gameObject.layer == 9) 
         {
@@ -31,10 +32,10 @@ public class bulletDamage : MonoBehaviour
         }
     }
 
-    // private IEnumerator DisableMovement(GameObject player)
-    // {
-    //     player.GetComponent<PlayerMovement>().enabled = false;
-    //     yield return new WaitForSeconds(0.5f);
-    //     player.GetComponent<PlayerMovement>().enabled = true;
-    // }
+    private IEnumerator DisableMovement(GameObject player)
+    {
+        player.GetComponent<PlayerMovement>().enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        player.GetComponent<PlayerMovement>().enabled = true;
+    }
 }
