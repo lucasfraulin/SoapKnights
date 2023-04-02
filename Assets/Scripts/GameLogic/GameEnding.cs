@@ -8,9 +8,10 @@ public class GameEnding : MonoBehaviour
 {
     public GameObject player;
     public GameObject GameOverMenu;
-    public GameObject LevelCompletedMenu;
+    public GameObject GameCompletedMenu; // only in the boss scene
     public AudioClip winMusic;
     public GameObject BackgroundMusic;
+    
     
     private AudioSource bgAudioSource;
     private PlayerStats playerStats;
@@ -23,7 +24,12 @@ public class GameEnding : MonoBehaviour
     void Start()
     {
         GameOverMenu.SetActive(false);
-        LevelCompletedMenu.SetActive(false);
+
+        if (GameCompletedMenu != null)
+        {
+            GameCompletedMenu.SetActive(false);
+        }
+
         GameFinished = false;
         GameCompleted = false;
         playerStats = player.GetComponent<PlayerStats>();
@@ -72,7 +78,7 @@ public class GameEnding : MonoBehaviour
             bgAudioSource.clip = winMusic;
             bgAudioSource.Play();
 
-            LevelCompletedMenu.SetActive(true);
+            GameCompletedMenu.SetActive(true);
 
             GameFinished = true;
             GameCompleted = true;

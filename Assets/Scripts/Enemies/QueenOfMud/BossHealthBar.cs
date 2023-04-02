@@ -13,4 +13,9 @@ public class BossHealthBar : MonoBehaviour
         float fillAmount = (float) boss.currentHealth / (float) boss.maxHealth;
         fillImage.fillAmount = fillAmount;
     }
+
+    public void SetBoss(GameObject gameObject) 
+    {
+        boss = gameObject.GetComponent<BossController>();
+    }
 }
