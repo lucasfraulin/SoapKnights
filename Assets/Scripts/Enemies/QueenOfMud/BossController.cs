@@ -43,7 +43,7 @@ public class BossController : MonoBehaviour
     public Color stage2Color;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerTransform = player.transform;

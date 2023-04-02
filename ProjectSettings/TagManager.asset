@@ -7,6 +7,8 @@ TagManager:
   - WaterParticle
   - Enemy
   - Dirt
+  - BossHealthBar
+  - InfoPanelMessage
   layers:
   - Default
   - TransparentFX
