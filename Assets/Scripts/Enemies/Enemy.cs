@@ -101,7 +101,7 @@ public class Enemy : MonoBehaviour
             direction = direction.normalized;
             playerRB.velocity = Vector2.zero;
             playerRB.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
-            StartCoroutine(DisableMovement(other.gameObject));
+            StartCoroutine(other.GetComponent<PlayerMovement>().DisableMovement(0.5f));
         }
         else if (other.CompareTag("WaterParticle"))
         {
@@ -110,12 +110,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private IEnumerator DisableMovement(GameObject player)
-    {
-        player.GetComponent<PlayerMovement>().enabled = false;
-        yield return new WaitForSeconds(0.5f);
-        player.GetComponent<PlayerMovement>().enabled = true;
-    }
+    // private IEnumerator DisableMovement(GameObject player)
+    // {
+    //     player.GetComponent<PlayerMovement>().enabled = false;
+    //     yield return new WaitForSeconds(0.5f);
+    //     player.GetComponent<PlayerMovement>().enabled = true;
+    // }
 
     private void TakeDamage(int damageAmount)
     {

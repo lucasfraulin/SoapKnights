@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.1f;
     [SerializeField] private LayerMask groundLayer;
 
+    public static bool movementDisabled = false;
+
     public AudioClip jumpSound;
 
     private Rigidbody2D rb;
@@ -28,10 +30,14 @@ public class PlayerMovement : MonoBehaviour
         groundCheck = transform.Find("GroundCheck");
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        movementDisabled = false;
     }
 
     private void Update()
     {
+        if (movementDisabled) 
+            return;
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -55,6 +61,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (movementDisabled)
+            return;
+
         float moveDirection = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
 
@@ -68,5 +77,12 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = false;
             isFacingRight = true;
         }
+    }
+
+    public IEnumerator DisableMovement(float time)
+    {
+        movementDisabled = true;
+        yield return new WaitForSeconds(time);
+        movementDisabled = false;
     }
 }
