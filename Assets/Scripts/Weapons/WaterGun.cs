@@ -24,16 +24,17 @@ public class WaterGun : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        //if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            Attack();
+            gunAttack();
             SpawnParticle();
         }
     }
 
-    private void Attack() 
+    private void gunAttack() 
     {
-        animator.SetTrigger("Attack");
+        animator.SetTrigger("Shoot");
         audioSource.Play();
     }
 
