@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7582153140971469027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.08821, y: -1.18307, z: -0.31468213}
-  m_LocalScale: {x: 0.43214387, y: 0.78327507, z: 0.25}
+  m_LocalScale: {x: 1.5901946, y: 1.9679427, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -108,14 +108,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7582153140971469027}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.0001
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0.2
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 8c3e17e805ce34a40964170306c489aa, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -135,6 +135,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   knockbackForce: 2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 512

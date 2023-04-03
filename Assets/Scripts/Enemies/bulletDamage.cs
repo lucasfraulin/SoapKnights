@@ -7,12 +7,6 @@ public class bulletDamage : MonoBehaviour
     public int damage = 10;
     public float knockbackForce = 5f;
 
-    private SpriteRenderer spriteRenderer;
-    private Color defaultColor;
-    private Animator animator;
-    private AudioSource audioSource;
-    [SerializeField] private LayerMask groundLayer;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
