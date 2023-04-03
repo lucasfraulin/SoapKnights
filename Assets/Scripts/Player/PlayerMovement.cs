@@ -9,8 +9,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.1f;
     [SerializeField] private LayerMask groundLayer;
 
-    public static bool movementDisabled = false;
-
     public AudioClip jumpSound;
 
     private Rigidbody2D rb;
@@ -18,16 +16,16 @@ public class PlayerMovement : MonoBehaviour
     private Transform groundCheck;
     private Animator animator;
     private AudioSource audioSource;
-
-    static public bool isFacingRight = true;
-
     private bool isGrounded = false;
 
+    public static bool movementDisabled = false;
+    public static bool isFacingRight = true;
     public static bool isAttacking = false;
 
 
     private void Awake()
     {
+        isAttacking = false;
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         groundCheck = transform.Find("GroundCheck");
@@ -89,8 +87,8 @@ public class PlayerMovement : MonoBehaviour
         movementDisabled = false;
     }
 
-    public static void setAttacking(bool attacking) {
+    public static void setAttacking(bool attacking) 
+    {
         isAttacking = attacking;
-
     }
 }

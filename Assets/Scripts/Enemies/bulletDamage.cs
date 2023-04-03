@@ -24,11 +24,4 @@ public class bulletDamage : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    // private IEnumerator DisableMovement(GameObject player)
-    // {
-    //     player.GetComponent<PlayerMovement>().enabled = false;
-    //     yield return new WaitForSeconds(0.5f);
-    //     player.GetComponent<PlayerMovement>().enabled = true;
-    // }
 }

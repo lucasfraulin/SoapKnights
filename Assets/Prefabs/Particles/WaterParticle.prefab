@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 7582153140971469024}
   - component: {fileID: 7582153140971469025}
   - component: {fileID: 7582153140971469026}
-  m_Layer: 0
+  - component: {fileID: 2448367136490620420}
+  m_Layer: 4
   m_Name: WaterParticle
   m_TagString: WaterParticle
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7582153140971469027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.08821, y: -1.18307, z: -0.31468213}
-  m_LocalScale: {x: 0.43214387, y: 0.78327507, z: 0.25}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 7787e93c5ceb0a843aa65937ce07444b, type: 3}
   m_Color: {r: 0, g: 0.6729846, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,12 +95,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.013318062}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2278533
 --- !u!50 &7582153140971469025
 Rigidbody2D:
   serializedVersion: 4
@@ -119,7 +120,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 8c3e17e805ce34a40964170306c489aa, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &7582153140971469026
 MonoBehaviour:
@@ -136,3 +137,22 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
+--- !u!95 &2448367136490620420
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7582153140971469027}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 066e3d84ed26165448c1226a32123f47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

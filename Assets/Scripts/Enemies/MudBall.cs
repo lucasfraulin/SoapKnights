@@ -23,19 +23,12 @@ public class MudBall : MonoBehaviour
             direction = direction.normalized;
             playerRB.velocity = Vector2.zero;
             playerRB.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
-            StartCoroutine(DisableMovement(other.gameObject));
+            StartCoroutine(other.GetComponent<PlayerMovement>().DisableMovement(0.3f));
             Destroy(gameObject);
         }
         else if (other.gameObject.layer == 9) 
         {
             Destroy(gameObject);
         }
-    }
-
-    private IEnumerator DisableMovement(GameObject player)
-    {
-        player.GetComponent<PlayerMovement>().enabled = false;
-        yield return new WaitForSeconds(0.5f);
-        player.GetComponent<PlayerMovement>().enabled = true;
     }
 }

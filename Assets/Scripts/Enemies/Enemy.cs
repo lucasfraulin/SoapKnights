@@ -110,12 +110,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // private IEnumerator DisableMovement(GameObject player)
-    // {
-    //     player.GetComponent<PlayerMovement>().enabled = false;
-    //     yield return new WaitForSeconds(0.5f);
-    //     player.GetComponent<PlayerMovement>().enabled = true;
-    // }
 
     private void TakeDamage(int damageAmount)
     {

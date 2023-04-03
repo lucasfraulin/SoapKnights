@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8928449575189980986}
   m_Layer: 0
   m_Name: MudBall
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,9 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   knockbackForce: 2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!95 &8928449575189980986
 Animator:
   serializedVersion: 3

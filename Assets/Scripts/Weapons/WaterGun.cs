@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class WaterGun : MonoBehaviour
 {
-    public GameObject particlePrefab;
-    public float particleSpeed = 3f;
-    public Transform[] rightSpawnPoints;
-    public Transform[] leftSpawnPoints;
+    [SerializeField] private Transform rightSpawnPoint;
+    [SerializeField] private Transform leftSpawnPoint;
+    [SerializeField] private Animator animator;
 
     public AudioClip attackSound;
-    
-    [SerializeField] private Animator animator;
+    public GameObject particlePrefab;
+    public float particleSpeed = 5f;
 
     private Vector2 direction;
     private AudioSource audioSource;
@@ -20,7 +19,6 @@ public class WaterGun : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = attackSound;
-        
     }
 
     private void Update()
@@ -29,7 +27,6 @@ public class WaterGun : MonoBehaviour
         {
             gunAttack();
             SpawnParticle();
-            
         }
     }
 
@@ -48,39 +45,30 @@ public class WaterGun : MonoBehaviour
     public IEnumerator Shoot()
     {
         PlayerMovement.setAttacking(true); 
-        yield return new WaitForSeconds(0.2f);
+
+        yield return new WaitForSeconds(0.3f);
+
+        GameObject particle;
+
         if (PlayerMovement.isFacingRight == true)
         {
-            foreach (Transform spawnPoint in rightSpawnPoints) {
-                Vector2 spawnPos = new Vector2(spawnPoint.position.x, spawnPoint.position.y);
-                GameObject particle = Instantiate(particlePrefab, spawnPos, Quaternion.identity);
-
-                direction = transform.right;
-
-                Rigidbody2D particleRB = particle.GetComponent<Rigidbody2D>();
-                if (particleRB != null)
-                {
-                    particleRB.velocity = direction * particleSpeed;
-                }
-            }
+            Vector2 spawnPos = new Vector2(rightSpawnPoint.position.x, rightSpawnPoint.position.y);
+            particle = Instantiate(particlePrefab, spawnPos, Quaternion.identity);
+            direction = transform.right;
         }
         else
         {
-            foreach (Transform spawnPoint in leftSpawnPoints) {
-                Vector2 spawnPos = new Vector2(spawnPoint.position.x, spawnPoint.position.y);
-                GameObject particle = Instantiate(particlePrefab, spawnPos, Quaternion.identity);
-
-                direction = transform.right * -1;
-
-                Rigidbody2D particleRB = particle.GetComponent<Rigidbody2D>();
-                if (particleRB != null)
-                {
-                    particleRB.velocity = direction * particleSpeed;
-                }
-            }
+            Vector2 spawnPos = new Vector2(leftSpawnPoint.position.x, leftSpawnPoint.position.y);
+            particle = Instantiate(particlePrefab, spawnPos, Quaternion.identity);
+            direction = transform.right * -1;
         }
-        yield return new WaitForSeconds(0.3f);
-        PlayerMovement.setAttacking(false); 
 
+        Rigidbody2D particleRB = particle.GetComponent<Rigidbody2D>();
+        if (particleRB != null)
+            particleRB.velocity = direction * particleSpeed;
+
+        yield return new WaitForSeconds(0.3f);
+
+        PlayerMovement.setAttacking(false); 
     }
 }

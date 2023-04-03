@@ -2689,6 +2689,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188333093}
     m_Modifications:
+    - target: {fileID: 160260311310279090, guid: e9d8ff54ff0f36f4d900809c9b5a3878,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1262121441}
+    - target: {fileID: 160260311310279090, guid: e9d8ff54ff0f36f4d900809c9b5a3878,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 326731999}
+    - target: {fileID: 160260311310279090, guid: e9d8ff54ff0f36f4d900809c9b5a3878,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 2040948188}
     - target: {fileID: 418767937320728720, guid: e9d8ff54ff0f36f4d900809c9b5a3878,
         type: 3}
       propertyPath: m_RootOrder
@@ -2790,26 +2805,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1262121438}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1262121443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262121442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f815d5f12efcc64a871dca3d5b6bcfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particlePrefab: {fileID: 7582153140971469027, guid: 907ec2646140e644eba5bb33ef4e1ed6,
-    type: 3}
-  spawnPoints:
-  - {fileID: 1262121441}
-  - {fileID: 326731999}
-  - {fileID: 2040948188}
-  spawnInterval: 0.1
-  particleColor: {r: 0.4, g: 0.2, b: 0, a: 1}
 --- !u!1001 &1309031958
 PrefabInstance:
   m_ObjectHideFlags: 0

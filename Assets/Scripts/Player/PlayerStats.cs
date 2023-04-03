@@ -23,7 +23,7 @@ public class PlayerStats : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        audioSource.Play();
+        audioSource.PlayOneShot(takeDamageClip);
         animator.SetTrigger("TakeDamage");
         StartCoroutine(FlashScreenRed());
         if (currentHealth <= 0)

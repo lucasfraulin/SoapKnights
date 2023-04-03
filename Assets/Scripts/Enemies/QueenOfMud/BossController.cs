@@ -8,6 +8,18 @@ public class BossController : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
 
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip attack1Sound;
+    [SerializeField] private AudioClip attack2Sound;
+    [SerializeField] private AudioClip takeDamageSound;
+    [SerializeField] private AudioClip transformSound;
+    [SerializeField] private AudioClip dieSound;
+    [SerializeField] private AudioClip entranceSound;
+    [SerializeField] private AudioClip bossStartSound;
+    [SerializeField] private AudioClip cackleSound;
+
+    private bool isAttacking = false;
+
     private GameObject player;
 
     // Boss stages
@@ -27,6 +39,7 @@ public class BossController : MonoBehaviour
     private float timeSinceAttackStarted = 0.0f;
     private Transform playerTransform;
     private bool canMove;
+    private bool canAttack;
     public LayerMask groundLayer;
 
     public int playerAttackDamage = 20;
@@ -41,23 +54,36 @@ public class BossController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color defaultColor;
     public Color stage2Color;
+    private bool bossEntered = false;
+
+    private bool bossTransitionActive = false;
 
     // Start is called before the first frame update
     void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerTransform = player.transform;
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         defaultColor = spriteRenderer.color;
         canMove = true;
-
-        setStage1();
+        canAttack = false;
+        bossEntered = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (bossTransitionActive)
+            return;
+
+        if (!bossEntered) 
+        {
+            StartCoroutine(EnterBoss());
+            return;
+        }
+            
 
         // Prevent movement during the attack animation
         if (timeSinceAttackStarted >= attackDuration)
@@ -69,7 +95,7 @@ public class BossController : MonoBehaviour
         // Move towards the player if within range
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
 
-        if (distanceToPlayer <= attackRange && timeSinceAttack >= attackDelay)
+        if (!isAttacking && distanceToPlayer <= attackRange && timeSinceAttack >= attackDelay)
         {
             if (playerTransform.position.x < transform.position.x)
             {
@@ -81,29 +107,9 @@ public class BossController : MonoBehaviour
             }
             animator.SetBool("Moving", false);
             
-            Attack();
-
-            if (currentStage == 1) 
-            {
-                Vector3 particleDirection = playerTransform.position - transform.position;
-                particleDirection.Normalize();
-                GameObject particle = Instantiate(AttackParticle, transform.position, Quaternion.identity);
-                particle.GetComponent<Rigidbody2D>().velocity = particleDirection * 3.0f;
-            }
-            else if (currentStage == 2) 
-            {
-                // Damage the player if within range
-                if (distanceToPlayer <= attackRange)
-                {
-                    player.GetComponent<PlayerStats>().TakeDamage(attackDamage);
-                    Rigidbody2D playerRB = player.GetComponent<Rigidbody2D>();
-                    Vector2 direction = playerRB.position - (Vector2)transform.position;
-                    direction = direction.normalized;
-                    playerRB.velocity = Vector2.zero;
-                    playerRB.AddForce(direction * 5f, ForceMode2D.Impulse);
-                    StartCoroutine(player.GetComponent<PlayerMovement>().DisableMovement(0.25f));
-                }
-            }
+            if (canAttack)
+                StartCoroutine(Attack());
+            
         }
         else if (distanceToPlayer > attackRange && distanceToPlayer <= rangeToPlayer && canMove) 
         {
@@ -153,6 +159,9 @@ public class BossController : MonoBehaviour
     // OnTriggerEnter2D is called when the boss is hit by the player's attack
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (bossTransitionActive)
+            return; 
+
         if (other.CompareTag("WaterParticle"))
         {
             TakeDamage(playerAttackDamage);
@@ -160,12 +169,12 @@ public class BossController : MonoBehaviour
             // Check if the boss should change to the next stage
             if (currentHealth <= 0 && currentStage == 1)
             {
-                setStage2();
+                StartCoroutine(TransformBoss());
             }
             else if (currentHealth <= 0 && currentStage == 2)
             {
                 // Boss defeated
-                Die();
+                StartCoroutine(BossDefeated());
             }
         }
     }
@@ -184,6 +193,8 @@ public class BossController : MonoBehaviour
         attackRange = 4f;
         attackDamage = 30;
         attackDelay = 1f;
+
+        canAttack = true;
     }
 
     private void setStage2()
@@ -201,20 +212,64 @@ public class BossController : MonoBehaviour
         attackDelay = 0.5f;
         attackDuration = 1f;
         attackRange = 1f;
+
+        canAttack = true;
     }
 
-    private void Attack() 
+    private IEnumerator Attack() 
     {
+        isAttacking = true;
+        canAttack = false;
         canMove = false;
+        audioSource.PlayOneShot(currentStage == 1 ? attack1Sound : attack2Sound);
         animator.SetTrigger("Attack");
+
         timeSinceAttack = 0f;
         timeSinceAttackStarted = 0.0f;
+
+        yield return new WaitForSeconds(0.1f);
+
+        float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+        if (currentStage == 1) 
+        {
+            Vector3 particleDirection = playerTransform.position - transform.position;
+            particleDirection.Normalize();
+            GameObject particle = Instantiate(AttackParticle, transform.position, Quaternion.identity);
+            particle.GetComponent<Rigidbody2D>().velocity = particleDirection * 3.0f;
+        }
+        else if (currentStage == 2) 
+        {
+            yield return new WaitForSeconds(0.1f);
+            // Damage the player if within range
+            if (distanceToPlayer <= attackRange)
+            {
+                player.GetComponent<PlayerStats>().TakeDamage(attackDamage);
+                Rigidbody2D playerRB = player.GetComponent<Rigidbody2D>();
+                Vector2 direction = playerRB.position - (Vector2)transform.position;
+                direction = direction.normalized;
+                playerRB.velocity = Vector2.zero;
+                playerRB.AddForce(direction * 5f, ForceMode2D.Impulse);
+                StartCoroutine(player.GetComponent<PlayerMovement>().DisableMovement(0.25f));
+            }
+        }
+
+        yield return new WaitForSeconds(attackDelay - timeSinceAttackStarted);
+        isAttacking = false;
+        canAttack = true;
+        canMove = true;
     }
 
     private void TakeDamage(int damageAmount)
     {
+        audioSource.PlayOneShot(takeDamageSound);
+        animator.SetTrigger("Hurt");
         currentHealth -= damageAmount;
         StartCoroutine(FlashRed());
+    }
+
+    public void Transform() 
+    {
+        StartCoroutine(TransformBoss());
     }
 
     public void Die()
@@ -223,10 +278,8 @@ public class BossController : MonoBehaviour
 
         animator.SetTrigger("Die");
 
-        // Disable collider
         GetComponent<Collider2D>().enabled = false;
 
-        // Destroy game object after death animation is finished
         float deathAnimationLength = animator.GetCurrentAnimatorStateInfo(0).length;
         Destroy(gameObject, deathAnimationLength);
     }
@@ -244,5 +297,36 @@ public class BossController : MonoBehaviour
             spriteRenderer.color = defaultColor;
         }
         
+    }
+
+    private IEnumerator EnterBoss() 
+    {
+        bossEntered = true;
+        audioSource.PlayOneShot(entranceSound);
+        bossTransitionActive = true;
+        yield return new WaitForSeconds(2.0f);
+        bossTransitionActive = false;
+        setStage1();
+        audioSource.PlayOneShot(bossStartSound);
+    }
+
+    private IEnumerator TransformBoss()
+    {
+        animator.SetTrigger("Die");
+        audioSource.PlayOneShot(transformSound);
+        bossTransitionActive = true;
+        yield return new WaitForSeconds(4.0f);
+        bossTransitionActive = false;
+        setStage2();
+        audioSource.PlayOneShot(bossStartSound);
+    }
+
+    private IEnumerator BossDefeated()
+    {
+        Die();
+        audioSource.PlayOneShot(dieSound);
+        bossTransitionActive = true;
+        yield return new WaitForSeconds(3.0f);
+        bossTransitionActive = false;
     }
 }

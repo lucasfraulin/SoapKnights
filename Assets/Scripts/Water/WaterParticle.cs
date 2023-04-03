@@ -6,9 +6,9 @@ public class WaterParticle : MonoBehaviour
 {
     [SerializeField] private LayerMask groundLayer;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.layer == 9) //ground layer
+        if (other.CompareTag("Enemy") || other.gameObject.layer == 9) //ground layer
         {
             Destroy(gameObject);
         }
