@@ -13,8 +13,8 @@ public class Enemy : MonoBehaviour
     public bool moving;
     public bool isRanged;
     public GameObject bullet; //bullet prefab
-    public float fireRate = 3000f; //Fire every 3 seconds
-    public float shootingPower = 3.0f; //projectile force
+    public float fireRate = 5000f; //Fire every 3 seconds
+    public float shootingPower = 5.0f; //projectile force
     public int enemyNum;
     public AudioClip takeDamageClip;
     public AudioClip dieClip;
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     private float[] minDistance = new float[3] {0f,-8.50f, 0.75f};
     private float velocity = 0.01f;
     private int direction = 1;
-    private float shootingTime = 0.0f; //to ensure enemy shoots every 3 seconds
+    private float shootingTime = 0.0f; //to ensure enemy shoots every 5 seconds
     private GameObject playerObj;
     private SpriteRenderer spriteRenderer;
     private Color defaultColor;
@@ -137,11 +137,11 @@ public class Enemy : MonoBehaviour
         if (Time.time > shootingTime)
         {
             shootingTime = Time.time + fireRate / 1000; //set shooting time to current time of shooting
-            Vector2 myPos = new Vector2(transform.position.x, transform.position.y); //our curr position is where our muzzle points
+            Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
             GameObject projectile = Instantiate(bullet, myPos, Quaternion.identity); //create our bullet
             Vector2 playerPos = new Vector2(playerObj.transform.position.x, playerObj.transform.position.y);
-            Vector2 direction = myPos - playerPos; //get the direction to the target
-            projectile.GetComponent<Rigidbody2D>().velocity = direction * shootingPower * -1; //shoot the bullet
+            Vector2 direction = (playerPos - myPos).normalized; //get the direction to the target, normalized for constant velocity
+            projectile.GetComponent<Rigidbody2D>().velocity = direction * shootingPower; //shoot the bullet
             Object.Destroy(projectile, 2.0f);
         }
     }

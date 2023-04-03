@@ -3650,8 +3650,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
+      propertyPath: fireRate
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
+        type: 3}
       propertyPath: isRanged
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
+        type: 3}
+      propertyPath: shootingPower
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
@@ -8440,6 +8450,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1112585613}
     m_Modifications:
+    - target: {fileID: 5823340401770393057, guid: 232292ee9802f7841af731bce348e13a,
+        type: 3}
+      propertyPath: fireRate
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823340401770393057, guid: 232292ee9802f7841af731bce348e13a,
+        type: 3}
+      propertyPath: shootingPower
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6453982260372264517, guid: 232292ee9802f7841af731bce348e13a,
         type: 3}
       propertyPath: m_RootOrder

@@ -970,6 +970,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1519896046}
     m_Modifications:
+    - target: {fileID: 742957537053839715, guid: 488803173b6cf0c42bf45df686dbe417,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7213970133222934502, guid: 488803173b6cf0c42bf45df686dbe417,
         type: 3}
       propertyPath: m_Name
@@ -4575,6 +4580,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1519896046}
     m_Modifications:
+    - target: {fileID: 742957537053839715, guid: 488803173b6cf0c42bf45df686dbe417,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7213970133222934502, guid: 488803173b6cf0c42bf45df686dbe417,
         type: 3}
       propertyPath: m_Name
