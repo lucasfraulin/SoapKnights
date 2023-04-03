@@ -23,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded = false;
 
+    public static bool isAttacking = false;
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -84,5 +87,10 @@ public class PlayerMovement : MonoBehaviour
         movementDisabled = true;
         yield return new WaitForSeconds(time);
         movementDisabled = false;
+    }
+
+    public static void setAttacking(bool attacking) {
+        isAttacking = attacking;
+
     }
 }

@@ -20,14 +20,16 @@ public class WaterGun : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = attackSound;
+        
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !PlayerMovement.isAttacking)
         {
             gunAttack();
             SpawnParticle();
+            
         }
     }
 
@@ -35,6 +37,7 @@ public class WaterGun : MonoBehaviour
     {
         animator.SetTrigger("Shoot");
         audioSource.Play();
+         
     }
 
     public void SpawnParticle()
@@ -44,7 +47,7 @@ public class WaterGun : MonoBehaviour
 
     public IEnumerator Shoot()
     {
-        
+        PlayerMovement.setAttacking(true); 
         yield return new WaitForSeconds(0.2f);
         if (PlayerMovement.isFacingRight == true)
         {
@@ -76,6 +79,8 @@ public class WaterGun : MonoBehaviour
                 }
             }
         }
+        yield return new WaitForSeconds(0.3f);
+        PlayerMovement.setAttacking(false); 
 
     }
 }
