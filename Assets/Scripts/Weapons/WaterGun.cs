@@ -24,8 +24,7 @@ public class WaterGun : MonoBehaviour
 
     private void Update()
     {
-        //if (Input.GetMouseButtonDown(0))
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetMouseButtonDown(0))
         {
             gunAttack();
             SpawnParticle();
@@ -40,6 +39,13 @@ public class WaterGun : MonoBehaviour
 
     public void SpawnParticle()
     {
+        StartCoroutine(Shoot());
+    }
+
+    public IEnumerator Shoot()
+    {
+        
+        yield return new WaitForSeconds(0.2f);
         if (PlayerMovement.isFacingRight == true)
         {
             foreach (Transform spawnPoint in rightSpawnPoints) {
