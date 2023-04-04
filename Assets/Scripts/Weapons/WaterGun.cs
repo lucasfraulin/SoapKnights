@@ -34,7 +34,6 @@ public class WaterGun : MonoBehaviour
     {
         animator.SetTrigger("Shoot");
         audioSource.Play();
-         
     }
 
     public void SpawnParticle()

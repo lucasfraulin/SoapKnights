@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7425747914226426085}
   - component: {fileID: 157751347549170190}
   - component: {fileID: 4824502825740096561}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MediumDirtPile
-  m_TagString: Untagged
+  m_TagString: Dirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

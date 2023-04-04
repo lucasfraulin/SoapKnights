@@ -2590,6 +2590,11 @@ PrefabInstance:
       propertyPath: damage
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
+        type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
       propertyPath: knockbackForce
@@ -2911,6 +2916,11 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
+        type: 3}
+      propertyPath: maxHealth
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
@@ -3475,6 +3485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
+        type: 3}
+      propertyPath: maxHealth
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
@@ -7781,6 +7796,11 @@ PrefabInstance:
       propertyPath: damage
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
+        type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
       propertyPath: knockbackForce
@@ -8233,6 +8253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586009711840465828, guid: e9bbb0d4564940746be3f6db53e4dbf9,
+        type: 3}
+      propertyPath: maxHealth
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6838351587689946249, guid: e9bbb0d4564940746be3f6db53e4dbf9,
         type: 3}

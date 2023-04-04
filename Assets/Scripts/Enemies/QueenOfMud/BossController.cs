@@ -165,17 +165,6 @@ public class BossController : MonoBehaviour
         if (other.CompareTag("WaterParticle"))
         {
             TakeDamage(playerAttackDamage);
-
-            // Check if the boss should change to the next stage
-            if (currentHealth <= 0 && currentStage == 1)
-            {
-                StartCoroutine(TransformBoss());
-            }
-            else if (currentHealth <= 0 && currentStage == 2)
-            {
-                // Boss defeated
-                StartCoroutine(BossDefeated());
-            }
         }
     }
 
@@ -209,7 +198,7 @@ public class BossController : MonoBehaviour
 
         moveSpeed = 3f;
         attackDamage = 25;
-        attackDelay = 0.5f;
+        attackDelay = 1f;
         attackDuration = 1f;
         attackRange = 1f;
 
@@ -259,12 +248,26 @@ public class BossController : MonoBehaviour
         canMove = true;
     }
 
-    private void TakeDamage(int damageAmount)
+    public void TakeDamage(int damageAmount)
     {
+        if (bossTransitionActive)
+            return;
+
         audioSource.PlayOneShot(takeDamageSound);
         animator.SetTrigger("Hurt");
         currentHealth -= damageAmount;
         StartCoroutine(FlashRed());
+
+        // Check if the boss should change to the next stage
+        if (currentHealth <= 0 && currentStage == 1)
+        {
+            StartCoroutine(TransformBoss());
+        }
+        else if (currentHealth <= 0 && currentStage == 2)
+        {
+            // Boss defeated
+            StartCoroutine(BossDefeated());
+        }
     }
 
     public void Transform() 

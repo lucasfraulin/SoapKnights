@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DirtPile : MonoBehaviour
 {
-    public int maxHealth = 10;
-    public int currentHealth = 10;
+    public int maxHealth = 5;
+    public int currentHealth = 5;
 
     public Sprite[] sprites;
     private SpriteRenderer spriteRenderer;
@@ -15,17 +15,14 @@ public class DirtPile : MonoBehaviour
         currentHealth = maxHealth;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
+    
+    public void TakeDamage(int damage)
     {
-        if (other.gameObject.CompareTag("WaterParticle"))
+        currentHealth--;
+        UpdateSprite();
+        if (currentHealth <= 0)
         {
-            currentHealth--;
-            UpdateSprite();
-            if (currentHealth <= 0)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 

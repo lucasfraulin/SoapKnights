@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
     private Color defaultColor;
     private Animator animator;
     private AudioSource audioSource;
+    private Collider2D m_collider;
 
     private void Start()
     {
@@ -38,6 +39,7 @@ public class Enemy : MonoBehaviour
         defaultColor = spriteRenderer.color;
         audioSource = GetComponent<AudioSource>();
         playerObj = GameObject.Find("Player");
+        m_collider = GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -47,8 +49,11 @@ public class Enemy : MonoBehaviour
         {
             Fire();
         }
+
+
         
     }
+
     private void FixedUpdate()
     {
         // for moving
@@ -143,6 +148,7 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         animator.SetTrigger("Death");
+        Destroy(m_collider);
         Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length);
     }
 
