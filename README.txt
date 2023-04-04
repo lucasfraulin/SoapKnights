@@ -163,4 +163,4 @@ Then you will have completed the game.
 An option to choose the levels has been added.
 
 ## Minor Bugs
-When entering pause menu for the first time, 'ESC' button might need to be pressed multiple times.
+When entering pause menu for the first time in a scene, 'ESC' button might need to be pressed multiple times.
