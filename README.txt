@@ -1,18 +1,41 @@
-#SOAP KNIGHTS PROTOTYPE
+#SOAP KNIGHTS
 
 Author: Lucas Fraulin
 Student number: 250963527
 Email: lfraulin@uwo.ca
 
+Group Members: Jiyong Song, Andrew Domfe
+
 ## FEATURES
 
-- Single Level
-	- 2 Dirt piles to clean up
-	- 1 Slime enemy to kill
-	- 1 Water fall (showing dirty water)
-	- 1 Lever to purify the water (changes to clean water)
-	- When all dirt piles are cleaned and the slime enemy is dead then you go to the lever
-	  and pull it to purify the water supply and cleanse the kingdom completing the level
+- Four Levels
+	- Level 1
+		- 2 Dirt piles to clean up
+		- 1 Basic Slime enemy to kill
+		- 1 Water fall (showing dirty water)
+		- 1 Lever to purify the water (changes to clean water)
+		- When all dirt piles are cleaned and the slime enemy is defeated then you go to the lever
+		  and pull it to purify the water supply and cleanse the kingdom completing the level
+	- Level 2
+		- 3 Dirt piles to clean up
+		- 2 Basic Slime enemies, 2 Patrolling Slime enemies to kill
+		- 1 Entrance and 1 Exit door
+		- When all dirt piles are cleaned and the slime enemy is defeated then you go to the exit door
+		  and interact with it to complete the level
+	- Level 3
+		- 6 Dirt piles to clean up
+		- 4 Baisc Slime enemies, 2 Ranged Slime enemies to kill
+		- 1 Entrance and 1 Exit door
+		- When all dirt piles are cleaned and the slime enemy is defeated then you go to the door
+		  and interact with it to complete the level
+	- Boss Level
+		- 1 Boss enemy with two different phases to kill
+		- 1 Water fall (showing dirty water)
+		- 1 Lever to purify the water (changes to clean water)
+		- In first phase, enemy flies around and does ranged attack
+		- In second phase, enemy runs on the ground and does melee attack
+		- When boss is dead then you go to the lever and pull it to purify the water supply 
+		  and cleanse the kingdom to beat the game
 
 - Playable character (Soap Knight)
 	- Movement
@@ -26,17 +49,20 @@ Email: lfraulin@uwo.ca
 		- Walk
 		- Idle
 	- Weapon
-		- Water Sword
-			- slash projects 3 waterParticles to damage Enemies and also cleans dirt
-			- Attack animation 
+		- Water Gun
+			- shoots 1 waterParticle to damage Enemies from a range and also cleans dirt
+			- Attack - shooting animation 
+		- Sword
+			- melee attack to damage Enemies and also cleans dirt
+			- Attack - slashing animation
 	
-	- Clean dirt by attacking it with water particles from water sword
-	- Kill enemies by attacking them with water sword
+	- Clean dirt by attacking it with water gun or sword
+	- Kill enemies by attacking them with water gun or sword
 	- Health bar
 		- If all health is lost then Game Over
 
 - Enemies and clearable obstacles
-	- Slime
+	- Basic Slime
 		- Health, damage stats
 		- Animations
 			- Take damage
@@ -44,12 +70,28 @@ Email: lfraulin@uwo.ca
 			- Player near
 			- Death
 		- If player comes into contact with slime, player takes damage and gets knocked back
-
+	- Patrolling Slime
+		- Health, damage stats
+		- Animations
+			- Take damage
+			- Idle player not near
+			- Player near
+			- Death
+		- If player comes into contact with slime, player takes damage and gets knocked back
+		- Patrols from wall to wall
+	- Ranged Slime
+		- Health, damage stats
+		- Animations
+			- Take damage
+			- Idle
+			- Death
+		- If player comes into contact with slime, player takes damage and gets knocked back
+		- Shoots bullets to player location that does damage
 	- Dirt
 		- 3 stage animation
 		- health
 		- gets smaller as more water particles hit it
-	- All dirt must be clear and enemies dead before player can pull the lever to purify water supply and win game
+		- All dirt must be clear and enemies dead before player can pull the lever to purify water supply and win game
 
 - Interactables
 	- Waterfall + lever
@@ -59,10 +101,18 @@ Email: lfraulin@uwo.ca
 		  pulling lever
 		- when near lever and dirt and enemies removed message appear saying to press "E" to pull the lever and clean
 		  the water supply
+	- Exit door
+		- once dirt and enemies removed can interact with "E" to open the door and progress to next level
+		- when near door and dirt and enemies still present - message appears saying to clean and kill all enemies before
+		  opening door
+		- when near door and dirt and enemies removed message appear saying to press "E" to open the door
 - Water particles
 	- disappear on contact with ground
 	- does damage to enemies and dirt
-
+	
+- Enemy bullets
+	- disappear on contact with ground
+	- does damage to and knockback player
 - Menus
 	- Main Menu
 	- Pause Menu - press 'ESC' to open and close pause menu during gameplay
@@ -75,7 +125,8 @@ Email: lfraulin@uwo.ca
 
 - 'A' and 'D' for horizontal movement
 - 'spacebar' for jump
-- 'Left Click' for attack
+- 'Left Click' for ranged attack
+- 'X' for melee attack
 - 'E' to interact
 - 'ESC' for pause menu (open/close)
 - 'Left Click' while in menus for selections
@@ -85,16 +136,14 @@ Email: lfraulin@uwo.ca
 The main goal is to purify the water supply to cleanse the kingdom.
 
 Initially you will start in the main menu. Click play game. 
-Then you will load into the level that starts immediately. 
-The goal is then to kill the slime and clear the dirt by using your water sword that shoots particles.
+Then you will load into level 1 that explains how to complete the level. 
+The goal is then to kill the basic slime and clear the dirt by using your water gun that shoots water particle or your sword.
 You must do this without touching the slime that can damage you and eventually kill you. 
 Once the slime is dead and the dirt is clear then you can find the lever and pull it to purify the water supply.
-If you do that you win the game.
-
-
-
-## IMPORTANT 
-
-Currently there is a bug (that will be fixed in future iterations) where if you spam attack while moving into your enemy (taking damage)
-and the enemy dies the character is frozen in place with the walking animation going. This was a recent bug that will be fixed moving forward.
-If you encounter the bug you will have to alt-f4 to or close the game manually because the pause menu will not work and you cannot exit the game.
+You can move on to the next levels after this.
+Level 2 features basic slimes, and a new enemy, patrolling slimes that you must defeat. You must also clear multiple dirt piles.
+Once you have cleared everything, you can find the door and open it.
+Level 3 features basic slimes and a new enemy, ranged slime, as well as more dirt piles. 
+Once you clear them all, open the door to go to boss level.
+Boss level features the boss with two phases. Defeat the boss both times then interact with lever to cleanse the kingdom.
+Then you will have completed the game.
