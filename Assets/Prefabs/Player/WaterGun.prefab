@@ -53,7 +53,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: 1eb7cbaf61d23a64bbd36c0a38b5cb0c, type: 3}
   particlePrefab: {fileID: 7582153140971469027, guid: 907ec2646140e644eba5bb33ef4e1ed6,
     type: 3}
-  particleSpeed: 3
+  particleSpeed: 4
 --- !u!82 &2003966650664715374
 AudioSource:
   m_ObjectHideFlags: 0

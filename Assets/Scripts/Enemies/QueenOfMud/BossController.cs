@@ -17,6 +17,8 @@ public class BossController : MonoBehaviour
     [SerializeField] private AudioClip entranceSound;
     [SerializeField] private AudioClip bossStartSound;
     [SerializeField] private AudioClip cackleSound;
+    [SerializeField] private AudioClip stage2Music;
+    [SerializeField] private BackgroundMusic backgroundMusic;
 
     private bool isAttacking = false;
 
@@ -156,18 +158,6 @@ public class BossController : MonoBehaviour
         timeSinceAttackStarted += Time.deltaTime;
     }
 
-    // OnTriggerEnter2D is called when the boss is hit by the player's attack
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (bossTransitionActive)
-            return; 
-
-        if (other.CompareTag("WaterParticle"))
-        {
-            TakeDamage(playerAttackDamage);
-        }
-    }
-
     private void setStage1()
     {
         currentStage = 1;
@@ -177,7 +167,7 @@ public class BossController : MonoBehaviour
 
         animator.runtimeAnimatorController = stage1AnimatorController;
 
-        moveSpeed = 2.0f;
+        moveSpeed = 1.0f;
         rangeToPlayer = 6.0f;
         attackRange = 4f;
         attackDamage = 30;
@@ -193,10 +183,11 @@ public class BossController : MonoBehaviour
         stage2.SetActive(true);
         currentHealth = maxHealth;
 
+        backgroundMusic.setBackgroundMusic(stage2Music);
         animator.runtimeAnimatorController = stage2AnimatorController;
         spriteRenderer.color = stage2Color;
 
-        moveSpeed = 3f;
+        moveSpeed = 2.0f;
         attackDamage = 25;
         attackDelay = 1f;
         attackDuration = 1f;
@@ -253,6 +244,8 @@ public class BossController : MonoBehaviour
         if (bossTransitionActive)
             return;
 
+        Debug.Log(damageAmount);
+
         audioSource.PlayOneShot(takeDamageSound);
         animator.SetTrigger("Hurt");
         currentHealth -= damageAmount;
@@ -282,9 +275,6 @@ public class BossController : MonoBehaviour
         animator.SetTrigger("Die");
 
         GetComponent<Collider2D>().enabled = false;
-
-        float deathAnimationLength = animator.GetCurrentAnimatorStateInfo(0).length;
-        Destroy(gameObject, deathAnimationLength);
     }
 
     private IEnumerator FlashRed()
@@ -331,5 +321,6 @@ public class BossController : MonoBehaviour
         bossTransitionActive = true;
         yield return new WaitForSeconds(3.0f);
         bossTransitionActive = false;
+        Destroy(gameObject);
     }
 }

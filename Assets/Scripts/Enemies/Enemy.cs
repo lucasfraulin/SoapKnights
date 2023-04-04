@@ -111,7 +111,6 @@ public class Enemy : MonoBehaviour
         else if (other.CompareTag("WaterParticle") || other.CompareTag("Sword"))
         {
             audioSource.PlayOneShot(takeDamageClip);
-            TakeDamage(sword_and_waterDamage);
         }
     }
 

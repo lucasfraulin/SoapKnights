@@ -10,8 +10,8 @@ public class GameEnding : MonoBehaviour
     public GameObject GameOverMenu;
     public GameObject GameCompletedMenu; // only in the boss scene
     public AudioClip winMusic;
-    public GameObject BackgroundMusic;
-    
+    public AudioClip deathMusic;
+    public BackgroundMusic backgroundMusic;
     
     private AudioSource bgAudioSource;
     private PlayerStats playerStats;
@@ -33,7 +33,6 @@ public class GameEnding : MonoBehaviour
         GameFinished = false;
         GameCompleted = false;
         playerStats = player.GetComponent<PlayerStats>();
-        bgAudioSource = BackgroundMusic.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -51,6 +50,7 @@ public class GameEnding : MonoBehaviour
         Cursor.visible = true;
 
         GameOverMenu.SetActive(true);
+        backgroundMusic.setBackgroundMusic(winMusic);
 
         GameFinished = true;
         GameCompleted = true;
@@ -75,8 +75,7 @@ public class GameEnding : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             
-            bgAudioSource.clip = winMusic;
-            bgAudioSource.Play();
+            backgroundMusic.setBackgroundMusic(winMusic);
 
             GameCompletedMenu.SetActive(true);
 

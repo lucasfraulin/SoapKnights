@@ -117,10 +117,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200b79538e038874d8e302a37d637bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 80
   currentHealth: 0
   damage: 10
-  waterDamage: 10
+  sword_and_waterDamage: 20
   knockbackForce: 5
   flashDuration: 0.1
   moving: 0
@@ -147,8 +147,21 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
+  - {x: -0.34933162, y: -0.29575658}
+  - {x: -0.40605664, y: -0.28571868}
+  - {x: -0.44927955, y: -0.25279903}
+  - {x: -0.5090449, y: -0.16415739}
+  - {x: -0.49830914, y: 0.009939551}
+  - {x: -0.4168551, y: 0.1619296}
+  - {x: -0.2895186, y: 0.2678548}
+  - {x: -0.16165233, y: 0.31585115}
+  - {x: 0.13631058, y: 0.3119843}
+  - {x: 0.34736323, y: 0.22511613}
+  - {x: 0.47528648, y: 0.085891426}
+  - {x: 0.5023594, y: 0.02605629}
+  - {x: 0.50091386, y: -0.16459739}
+  - {x: 0.4433968, y: -0.2621621}
+  - {x: 0.35491204, y: -0.30691707}
 --- !u!82 &-4028022931507078883
 AudioSource:
   m_ObjectHideFlags: 0

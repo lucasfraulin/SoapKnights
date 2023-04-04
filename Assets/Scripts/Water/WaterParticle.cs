@@ -9,8 +9,24 @@ public class WaterParticle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy") || other.gameObject.layer == 9) //ground layer
+        if (other.gameObject.layer == 9) //ground layer
         {
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("Enemy")) 
+        {
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(20);
+            }
+            else {
+                BossController boss = other.gameObject.GetComponent<BossController>();
+                if (boss != null) 
+                {
+                    boss.TakeDamage(20);
+                }
+            }
             Destroy(gameObject);
         }
         else if (other.CompareTag("Dirt")) 

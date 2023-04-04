@@ -210,6 +210,11 @@ PrefabInstance:
       objectReference: {fileID: 110557233}
     - target: {fileID: 9176280978392128049, guid: 7e75a1bcae218024cbaee516da0b7535,
         type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 110557234}
+    - target: {fileID: 9176280978392128049, guid: 7e75a1bcae218024cbaee516da0b7535,
+        type: 3}
       propertyPath: LevelCompletedMenu
       value: 
       objectReference: {fileID: 0}
@@ -419,6 +424,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 110557232}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &110557234 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8703838818461075939, guid: 5431d69df729e9044abeb7b4f047f5b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 110557232}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110557233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3045c341119adad428fee723c9929040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &126811298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,22 +2596,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 7582153140971469027, guid: 43b68e2123567f34a8539f9eadaaf21a,
-        type: 3}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: maxHealth
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
       propertyPath: knockbackForce
@@ -2943,22 +2944,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 7582153140971469027, guid: 43b68e2123567f34a8539f9eadaaf21a,
-        type: 3}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: maxHealth
-      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
@@ -3512,22 +3497,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 7582153140971469027, guid: 43b68e2123567f34a8539f9eadaaf21a,
-        type: 3}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: maxHealth
-      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
@@ -7123,16 +7092,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Dirt
       objectReference: {fileID: 0}
-    - target: {fileID: 4824502825740096561, guid: fc82d28310c9ebf42985c12993813a4d,
-        type: 3}
-      propertyPath: maxHealth
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824502825740096561, guid: fc82d28310c9ebf42985c12993813a4d,
-        type: 3}
-      propertyPath: currentHealth
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc82d28310c9ebf42985c12993813a4d, type: 3}
 --- !u!4 &1139701721 stripped
@@ -7948,22 +7907,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 7582153140971469027, guid: 43b68e2123567f34a8539f9eadaaf21a,
-        type: 3}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: maxHealth
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
       propertyPath: knockbackForce
@@ -8412,16 +8355,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1112585613}
     m_Modifications:
-    - target: {fileID: 5586009711840465828, guid: e9bbb0d4564940746be3f6db53e4dbf9,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5586009711840465828, guid: e9bbb0d4564940746be3f6db53e4dbf9,
-        type: 3}
-      propertyPath: maxHealth
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 6838351587689946249, guid: e9bbb0d4564940746be3f6db53e4dbf9,
         type: 3}
       propertyPath: m_Name

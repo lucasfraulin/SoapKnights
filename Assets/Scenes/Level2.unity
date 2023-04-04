@@ -757,6 +757,11 @@ PrefabInstance:
       objectReference: {fileID: 1207790595}
     - target: {fileID: 9176280978392128049, guid: 7e75a1bcae218024cbaee516da0b7535,
         type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 1207790596}
+    - target: {fileID: 9176280978392128049, guid: 7e75a1bcae218024cbaee516da0b7535,
+        type: 3}
       propertyPath: LevelCompletedMenu
       value: 
       objectReference: {fileID: 0}
@@ -1711,6 +1716,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1207790594}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1207790596 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8703838818461075939, guid: 5431d69df729e9044abeb7b4f047f5b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1207790594}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207790595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3045c341119adad428fee723c9929040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1210366600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1862,11 +1879,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: damage
-      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}
@@ -6386,11 +6398,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880353816461900877, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
-        type: 3}
-      propertyPath: damage
-      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8882905677656780393, guid: 28217f1f5f2c76c499ba6f7ddf7eb5da,
         type: 3}

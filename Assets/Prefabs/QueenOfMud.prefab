@@ -259,9 +259,11 @@ MonoBehaviour:
   takeDamageSound: {fileID: 8300000, guid: 670023a95d5524aa79ad7583b1534d22, type: 3}
   transformSound: {fileID: 8300000, guid: d654174ef194bd7479bf4b8d8f753318, type: 3}
   dieSound: {fileID: 8300000, guid: aa967a280457c054bb646d57611f5bd0, type: 3}
-  entranceSound: {fileID: 8300000, guid: 68a4d3b8869e442398b2fae15bc7c50b, type: 3}
+  entranceSound: {fileID: 8300000, guid: 512097115fdf2a04eb95f39551c40961, type: 3}
   bossStartSound: {fileID: 8300000, guid: 21c4a490b24ba2045bc815f7626a40ef, type: 3}
   cackleSound: {fileID: 8300000, guid: 512097115fdf2a04eb95f39551c40961, type: 3}
+  stage2Music: {fileID: 8300000, guid: 1b197323357862a44b90b0f13b8f26d0, type: 3}
+  backgroundMusic: {fileID: 0}
   currentStage: 1
   stage1: {fileID: 1588399535942052538}
   stage2: {fileID: 1321049376174635532}

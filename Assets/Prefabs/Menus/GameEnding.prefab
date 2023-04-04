@@ -46,8 +46,7 @@ MonoBehaviour:
   player: {fileID: 1296052454175554946, guid: 7d044c4386c09b940b683f73bbe6702f, type: 3}
   GameOverMenu: {fileID: 2622561507552478144, guid: ed70c6218f1bac14aa69cc8e60825fd3,
     type: 3}
-  LevelCompletedMenu: {fileID: 546592442800398919, guid: 17d9a04ca45e3aa44b6a9fcfd0bb3416,
-    type: 3}
+  GameCompletedMenu: {fileID: 0}
   winMusic: {fileID: 8300000, guid: 1f2ad53bacc245642854dbdc8ea71a9b, type: 3}
-  gameOverMusic: {fileID: 8300000, guid: 033766cc31c97904bae4404b8a079544, type: 3}
-  BackgroundMusic: {fileID: 0}
+  deathMusic: {fileID: 8300000, guid: af3977a16ffdcf945acc56e5bc232534, type: 3}
+  backgroundMusic: {fileID: 0}

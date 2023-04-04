@@ -242,7 +242,7 @@ MonoBehaviour:
   animator: {fileID: 7035520464048892358}
   attackRange: 0.5
   attackDamage: 20
-  damageToDirt: 3
+  damageToDirt: 1
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
