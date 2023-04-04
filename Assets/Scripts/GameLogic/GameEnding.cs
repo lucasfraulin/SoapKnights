@@ -18,11 +18,13 @@ public class GameEnding : MonoBehaviour
 
     public static bool GameFinished;
     public static bool GameCompleted;
+    private bool alreadyOver;
 
     float completionTime;
 
     void Start()
     {
+        alreadyOver = false;
         GameOverMenu.SetActive(false);
 
         if (GameCompletedMenu != null)
@@ -37,7 +39,7 @@ public class GameEnding : MonoBehaviour
 
     void Update()
     {
-        if (playerStats.currentHealth <= 0) 
+        if (playerStats.currentHealth <= 0 && !alreadyOver) 
         {
             GameOver();
         }
@@ -45,6 +47,7 @@ public class GameEnding : MonoBehaviour
 
     void GameOver()
     {
+        alreadyOver = true;
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
