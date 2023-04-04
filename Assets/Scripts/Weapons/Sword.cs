@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    public Transform[] rightSpawnPoints;
-    public Transform[] leftSpawnPoints;
-
     public AudioClip attackSound;
     
     [SerializeField] private Animator animator;
+
+    public Transform SwordRange;
+
+     [SerializeField] public float swordReach = 0.5f;
 
     private Vector2 direction;
     private AudioSource audioSource;
@@ -22,16 +23,16 @@ public class Sword : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) && !PlayerMovement.isShooting)
         {
-            Attack();
+            swordAttack();
             
         }
     }
 
-    private void Attack() 
+    private void swordAttack() 
     {
-        animator.SetTrigger("Attack");
+        animator.SetTrigger("SwordAttack");
         audioSource.Play();
     }
 
