@@ -1,10 +1,10 @@
 #SOAP KNIGHTS
 
-Author: Lucas Fraulin
-Student number: 250963527
-Email: lfraulin@uwo.ca
+Author: Lucas Fraulin, Jiyong Song, Andrew Domfe
+Student number: 250963527,  ,
+Email: lfraulin@uwo.ca, 
 
-Group Members: Jiyong Song, Andrew Domfe
+Group Members: 
 
 ## FEATURES
 
@@ -88,25 +88,18 @@ Group Members: Jiyong Song, Andrew Domfe
 		- If player comes into contact with slime, player takes damage and gets knocked back
 		- Shoots bullets to player location that does damage
 	- Boss (Queen of Mud)
-		- Transitions
-		    	- Entrance
-				- animation
+		- Transitions 
+			- Entrance, transform Stage 1 -> stage 2, death
+				- animations
 				- sound effects
-				- Health bar filled on enemy start
-		    	- Stage 1 -> Stage 2
-				- "death" before the Queen of Mud gets revived
-				- animation
-				- sound effects
-				- health bar filled back up 
-			    	- death/exit
-					- animation
-					- sound effects
-					- gameobject destroyed after death animation
-			- Stage 1: 
-			      - ranged attack: shoots mud balls 
-			- Stage 2:
-			      - short ranged melee
+				- Health bar filled on enemy start and start of stage 2
+				- gameobject destroyed after death animation
+		- Stage 1: 
+				- ranged attack: shoots mud balls 
+		- Stage 2:
+				- short ranged melee
 		- animations and sound effects 
+		- movement towards player within range
 	- Dirt
 		- 3 stage animation
 		- health
@@ -146,7 +139,7 @@ Group Members: Jiyong Song, Andrew Domfe
 - 'A' and 'D' for horizontal movement
 - 'spacebar' for jump
 - 'Left Click' for ranged attack
-- 'X' for melee attack
+- 'Right Click' or 'X' for melee attack
 - 'E' to interact
 - 'ESC' for pause menu (open/close)
 - 'Left Click' while in menus for selections
@@ -159,11 +152,12 @@ Initially you will start in the main menu. Click play game.
 Then you will load into level 1 that explains how to complete the level. 
 The goal is then to kill the basic slime and clear the dirt by using your water gun that shoots water particle or your sword.
 You must do this without touching the slime that can damage you and eventually kill you. 
-Once the slime is dead and the dirt is clear then you can find the lever and pull it to purify the water supply.
+
 You can move on to the next levels after this.
 Level 2 features basic slimes, and a new enemy, patrolling slimes that you must defeat. You must also clear multiple dirt piles.
 Once you have cleared everything, you can find the door and open it.
 Level 3 features basic slimes and a new enemy, ranged slime, as well as more dirt piles. 
 Once you clear them all, open the door to go to boss level.
-Boss level features the boss with two phases. Defeat the boss both times then interact with lever to cleanse the kingdom.
+Boss level features the boss with two phases. Defeat the boss both times.
+Once the Queen Oof  then you can find the lever and pull it to purify the water supply and you will have cleaned the kingdom.
 Then you will have completed the game.
