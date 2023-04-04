@@ -87,6 +87,26 @@ Group Members: Jiyong Song, Andrew Domfe
 			- Death
 		- If player comes into contact with slime, player takes damage and gets knocked back
 		- Shoots bullets to player location that does damage
+	- Boss (Queen of Mud)
+		- Transitions
+		    	- Entrance
+				- animation
+				- sound effects
+				- Health bar filled on enemy start
+		    	- Stage 1 -> Stage 2
+				- "death" before the Queen of Mud gets revived
+				- animation
+				- sound effects
+				- health bar filled back up 
+			    	- death/exit
+					- animation
+					- sound effects
+					- gameobject destroyed after death animation
+			- Stage 1: 
+			      - ranged attack: shoots mud balls 
+			- Stage 2:
+			      - short ranged melee
+		- animations and sound effects 
 	- Dirt
 		- 3 stage animation
 		- health
