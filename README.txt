@@ -1,8 +1,8 @@
 #SOAP KNIGHTS
 
 Author: Lucas Fraulin, Jiyong Song, Andrew Domfe
-Student number: 250963527, 251112894, 
-Email: lfraulin@uwo.ca, jsong386@uwo.ca, 
+Student number: 250963527, 251112894, 251104337
+Email: lfraulin@uwo.ca, jsong386@uwo.ca, adomfe@uwo.ca
 
 Group Members: 
 
