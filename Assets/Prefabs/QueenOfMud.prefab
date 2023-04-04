@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3931815b89d5a4e9ab99be89474280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 200
   currentHealth: 0
   attack1Sound: {fileID: 8300000, guid: 076c674d9627d49d7bc9428ecb754613, type: 3}
   attack2Sound: {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}

@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject controls;
+    
+    void Start() 
+    {
+        controls.SetActive(false);
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene("Level1");
@@ -25,13 +32,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("BossLevel");
     }
 
-    public void ControlsMenu() 
-    {
-        SceneManager.LoadScene("ControlsMenu");
-    }
-
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void OpenControls()
+    {
+        controls.SetActive(true);
+    }
+
+    public void CloseControls()
+    {
+        controls.SetActive(false);
     }
 }

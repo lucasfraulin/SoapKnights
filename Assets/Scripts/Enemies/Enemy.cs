@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     public bool moving;
     public bool isRanged;
     public GameObject bullet; //bullet prefab
-    public float fireRate = 5000f; //Fire every 3 seconds
+    public float fireRate = 3.0f; //Fire every 3 seconds
     public float shootingPower = 5.0f; //projectile force
     public int enemyNum;
     public AudioClip takeDamageClip;
@@ -108,15 +108,12 @@ public class Enemy : MonoBehaviour
             playerRB.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
             StartCoroutine(other.GetComponent<PlayerMovement>().DisableMovement(0.5f));
         }
-        else if (other.CompareTag("WaterParticle") || other.CompareTag("Sword"))
-        {
-            audioSource.PlayOneShot(takeDamageClip);
-        }
     }
 
 
     public void TakeDamage(int damageAmount)
     {
+        audioSource.PlayOneShot(takeDamageClip);
         currentHealth -= damageAmount;
 
         if (currentHealth <= 0)
@@ -134,7 +131,7 @@ public class Enemy : MonoBehaviour
     {
         if (Time.time > shootingTime)
         {
-            shootingTime = Time.time + fireRate / 1000; //set shooting time to current time of shooting
+            shootingTime = Time.time + fireRate; //set shooting time to current time of shooting
             Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
             GameObject projectile = Instantiate(bullet, myPos, Quaternion.identity); //create our bullet
             Vector2 playerPos = new Vector2(playerObj.transform.position.x, playerObj.transform.position.y);

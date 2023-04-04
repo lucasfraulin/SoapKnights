@@ -126,7 +126,7 @@ MonoBehaviour:
   moving: 0
   isRanged: 1
   bullet: {fileID: 7582153140971469027, guid: 43b68e2123567f34a8539f9eadaaf21a, type: 3}
-  fireRate: 5000
+  fireRate: 2.5
   shootingPower: 5
   enemyNum: 0
   takeDamageClip: {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
