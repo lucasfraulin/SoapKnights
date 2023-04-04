@@ -85,7 +85,6 @@ GameObject:
   - component: {fileID: 7213970133222934509}
   - component: {fileID: 7880353816461900877}
   - component: {fileID: 140729108945022110}
-  - component: {fileID: 4472705584788909217}
   m_Layer: 10
   m_Name: Slime
   m_TagString: Enemy
@@ -212,10 +211,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200b79538e038874d8e302a37d637bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 50
   currentHealth: 0
   damage: 10
-  sword_and_waterDamge: 10
+  sword_and_waterDamage: 20
   knockbackForce: 5
   flashDuration: 0.1
   moving: 0
@@ -322,15 +321,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4472705584788909217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7213970133222934502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd5448bce266e46b6b60bd905f7f79f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

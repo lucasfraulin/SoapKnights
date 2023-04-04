@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5933014204004772255}
   - component: {fileID: 6852767497390733303}
   - component: {fileID: 6521376991189737164}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LargeDirtPile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

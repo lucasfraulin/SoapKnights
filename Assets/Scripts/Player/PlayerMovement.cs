@@ -20,13 +20,11 @@ public class PlayerMovement : MonoBehaviour
 
     public static bool movementDisabled = false;
     public static bool isFacingRight = true;
-    public static bool isShooting = false;
     public static bool isAttacking = false;
 
 
     private void Awake()
     {
-        isShooting = false;
         isAttacking = false;
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -48,7 +46,6 @@ public class PlayerMovement : MonoBehaviour
             audioSource.PlayOneShot(jumpSound);
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
-
 
         float horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -87,11 +84,6 @@ public class PlayerMovement : MonoBehaviour
         movementDisabled = true;
         yield return new WaitForSeconds(time);
         movementDisabled = false;
-    }
-
-    public static void setShooting(bool shooting) 
-    {
-        isShooting = shooting;
     }
 
     public static void setAttacking(bool attacking) 
