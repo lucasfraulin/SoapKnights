@@ -1065,7 +1065,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 874919620}
     - target: {fileID: 1477959435024481724, guid: c252cb1633cf6bc4b9acd71e2f9cde4d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1251,7 +1251,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 874919618}
     - target: {fileID: 6509361429656035366, guid: c252cb1633cf6bc4b9acd71e2f9cde4d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1277,6 +1277,44 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 874919614}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &874919617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6509361429656035368, guid: c252cb1633cf6bc4b9acd71e2f9cde4d,
+    type: 3}
+  m_PrefabInstance: {fileID: 874919614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &874919618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874919617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c49535bf6d3464fb2ed5fc645eb49e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 874919615}
+--- !u!1 &874919619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6973803912339085114, guid: c252cb1633cf6bc4b9acd71e2f9cde4d,
+    type: 3}
+  m_PrefabInstance: {fileID: 874919614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &874919620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874919619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c49535bf6d3464fb2ed5fc645eb49e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 874919615}
 --- !u!4 &932126298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6655238366807359332, guid: f8cb174cbeb2526429511358e4686173,
