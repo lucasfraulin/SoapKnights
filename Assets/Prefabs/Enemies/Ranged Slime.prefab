@@ -144,7 +144,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   damage: 20
-  waterDamage: 10
+  sword_and_waterDamge: 10
   knockbackForce: 5
   flashDuration: 0.1
   moving: 0
