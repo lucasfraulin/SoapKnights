@@ -12,10 +12,9 @@ Group Members:
 	- Level 1
 		- 2 Dirt piles to clean up
 		- 1 Basic Slime enemy to kill
-		- 1 Water fall (showing dirty water)
-		- 1 Lever to purify the water (changes to clean water)
-		- When all dirt piles are cleaned and the slime enemy is defeated then you go to the lever
-		  and pull it to purify the water supply and cleanse the kingdom completing the level
+		- 1 Entrance and 1 Exit door
+		- When all dirt piles are cleaned and the slime enemy is defeated then you go to the exit door
+		  and interact with it to complete the level
 	- Level 2
 		- 3 Dirt piles to clean up
 		- 2 Basic Slime enemies, 2 Patrolling Slime enemies to kill
@@ -24,7 +23,7 @@ Group Members:
 		  and interact with it to complete the level
 	- Level 3
 		- 6 Dirt piles to clean up
-		- 4 Baisc Slime enemies, 2 Ranged Slime enemies to kill
+		- 4 Basicc Slime enemies, 2 Ranged Slime enemies to kill
 		- 1 Entrance and 1 Exit door
 		- When all dirt piles are cleaned and the slime enemy is defeated then you go to the door
 		  and interact with it to complete the level
@@ -95,9 +94,9 @@ Group Members:
 				- Health bar filled on enemy start and start of stage 2
 				- gameobject destroyed after death animation
 		- Stage 1: 
-				- ranged attack: shoots mud balls 
+			- ranged attack: shoots mud balls 
 		- Stage 2:
-				- short ranged melee
+			- melee attack, runs to where player is
 		- animations and sound effects 
 		- movement towards player within range
 	- Dirt
@@ -121,8 +120,7 @@ Group Members:
 		- when near door and dirt and enemies removed message appear saying to press "E" to open the door
 - Water particles
 	- disappear on contact with ground
-	- does damage to enemies and dirt
-	
+	- does damage to enemies and dirt	
 - Enemy bullets
 	- disappear on contact with ground
 	- does damage to and knockback player
@@ -161,3 +159,5 @@ Once you clear them all, open the door to go to boss level.
 Boss level features the boss with two phases. Defeat the boss both times.
 Once the Queen Oof  then you can find the lever and pull it to purify the water supply and you will have cleaned the kingdom.
 Then you will have completed the game.
+
+An option to choose the levels has been added.
