@@ -25,6 +25,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("BossLevel");
     }
 
+    public void ControlsMenu() 
+    {
+        SceneManager.LoadScene("ControlsMenu");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
