@@ -10,6 +10,21 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
+    public void PlayLevel2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+
+    public void PlayLevel3()
+    {
+        SceneManager.LoadScene("Level3");
+    }
+    
+    public void BossLevel()
+    {
+        SceneManager.LoadScene("BossLevel");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
