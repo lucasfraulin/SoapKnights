@@ -31,7 +31,7 @@ Group Members:
 		- 1 Boss enemy with two different phases to kill
 		- 1 Water fall (showing dirty water)
 		- 1 Lever to purify the water (changes to clean water)
-		- In first phase, enemy flies around and does ranged attack
+		- In first phase, enemy throws mud balls to player
 		- In second phase, enemy runs on the ground and does melee attack
 		- When boss is dead then you go to the lever and pull it to purify the water supply 
 		  and cleanse the kingdom to beat the game
@@ -49,10 +49,10 @@ Group Members:
 		- Idle
 	- Weapon
 		- Water Gun
-			- shoots 1 waterParticle to damage Enemies from a range and also cleans dirt
+			- shoots water particle to damage Enemies from a range and also cleans dirt
 			- Attack - shooting animation 
 		- Sword
-			- melee attack to damage Enemies and also cleans dirt
+			- slashes in front of player to damage Enemies and also cleans dirt
 			- Attack - slashing animation
 	
 	- Clean dirt by attacking it with water gun or sword
@@ -161,3 +161,6 @@ Once the Queen Oof  then you can find the lever and pull it to purify the water 
 Then you will have completed the game.
 
 An option to choose the levels has been added.
+
+## Minor Bugs
+When entering pause menu for the first time, 'ESC' button might need to be pressed multiple times.
