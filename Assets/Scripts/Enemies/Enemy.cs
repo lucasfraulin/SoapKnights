@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public int damage = 10;
-    public int waterDamage = 10;
+    public int sword_and_waterDamage = 10;
     public float knockbackForce = 5f;
     public float flashDuration = 0.1f;
     public bool moving;
@@ -103,15 +103,15 @@ public class Enemy : MonoBehaviour
             playerRB.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
             StartCoroutine(other.GetComponent<PlayerMovement>().DisableMovement(0.5f));
         }
-        else if (other.CompareTag("WaterParticle"))
+        else if (other.CompareTag("WaterParticle") || other.CompareTag("Sword"))
         {
             audioSource.PlayOneShot(takeDamageClip);
-            TakeDamage(waterDamage);
+            TakeDamage(sword_and_waterDamage);
         }
     }
 
 
-    private void TakeDamage(int damageAmount)
+    public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
 
