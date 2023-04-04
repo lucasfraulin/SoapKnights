@@ -49,9 +49,6 @@ public class Enemy : MonoBehaviour
         {
             Fire();
         }
-
-
-        
     }
 
     private void FixedUpdate()

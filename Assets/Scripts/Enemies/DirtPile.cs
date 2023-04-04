@@ -28,10 +28,8 @@ public class DirtPile : MonoBehaviour
 
     private void UpdateSprite()
     {
-        // Calculate the sprite index based on the current health and the number of available sprites
         int spriteIndex = Mathf.Clamp((int)(((float)currentHealth / (float)maxHealth) * sprites.Length), 0, sprites.Length - 1);
 
-        // Set the sprite to the appropriate index
         spriteRenderer.sprite = sprites[spriteIndex];
     }
 }

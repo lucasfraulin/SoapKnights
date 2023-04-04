@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BossController : MonoBehaviour
 {
-    // Boss health
     public int maxHealth = 100;
     public int currentHealth;
 
@@ -24,13 +23,11 @@ public class BossController : MonoBehaviour
 
     private GameObject player;
 
-    // Boss stages
     public int currentStage = 1;
     public GameObject stage1;
     public GameObject stage2;
     public float stage2Scale = 1.5f;
 
-    // Boss movement
     public float moveSpeed = 2.0f;
     public float rangeToPlayer = 5.0f;
     public float attackRange = 1.5f;
@@ -48,7 +45,6 @@ public class BossController : MonoBehaviour
 
     public GameObject AttackParticle;
 
-    // Animator controllers
     public RuntimeAnimatorController stage1AnimatorController;
     public RuntimeAnimatorController stage2AnimatorController;
     private Animator animator;
@@ -60,7 +56,6 @@ public class BossController : MonoBehaviour
 
     private bool bossTransitionActive = false;
 
-    // Start is called before the first frame update
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -74,7 +69,6 @@ public class BossController : MonoBehaviour
         bossEntered = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (bossTransitionActive)
@@ -220,7 +214,6 @@ public class BossController : MonoBehaviour
         else if (currentStage == 2) 
         {
             yield return new WaitForSeconds(0.1f);
-            // Damage the player if within range
             if (distanceToPlayer <= attackRange)
             {
                 player.GetComponent<PlayerStats>().TakeDamage(attackDamage);
@@ -251,14 +244,12 @@ public class BossController : MonoBehaviour
         currentHealth -= damageAmount;
         StartCoroutine(FlashRed());
 
-        // Check if the boss should change to the next stage
         if (currentHealth <= 0 && currentStage == 1)
         {
             StartCoroutine(TransformBoss());
         }
         else if (currentHealth <= 0 && currentStage == 2)
         {
-            // Boss defeated
             StartCoroutine(BossDefeated());
         }
     }

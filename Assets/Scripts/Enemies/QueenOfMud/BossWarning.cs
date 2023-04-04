@@ -23,7 +23,6 @@ public class BossWarning : MonoBehaviour
 
             BossHealthBar.SetActive(true);
 
-            // Disable the warning canvas
             gameObject.SetActive(false);
         }
     }
